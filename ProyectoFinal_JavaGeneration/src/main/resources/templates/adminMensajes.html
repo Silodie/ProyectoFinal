@@ -49,7 +49,7 @@
 						<th> Asunto </th>
 						<th> Mensaje </th>
 						<th> Respuesta </th>
-						<th class="opc"> Respondido/Responder </th>
+						<th class="opc"> Respondido </th>
 					</tr>
 				</thead>
 				<tbody>
@@ -60,13 +60,8 @@
 						<td th:text="${mensaje.asunto}" />
 						<td th:text="${mensaje.mensaje}" />
 						<td th:text="${mensaje.respuesta}"></td>
-						<td><input type="checkbox" name="cuchara"
-						onchange="getrespondido(this)" th:checked="${mensaje.respondido}" />
-						&nbsp&nbsp&nbsp&nbsp&nbsp
-						<a class="btn btn-outline-secondary" th:href="@{/admin/mensajes/responder(id=${mensaje.id})}">
-								<i class="fas fa-edit"></i>
-							</a>
-						</td>
+						<td th:if="${mensaje.respondido == true}"> <i class="far fa-check-square"></i>	</td>
+						<td th:if="${mensaje.respondido == false}"> <i class="far fa-square"></i>	</td>
 					</tr>
 				</tbody>
 			</table>

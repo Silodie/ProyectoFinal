@@ -50,7 +50,17 @@ public class MensajeController {
 	@GetMapping("/admin/mensajes")
 	public String listarMensajes(Model m) {
 		log.info("----- Entrando en listarMensajes");
-		m.addAttribute("mensajesList", service.listarMensajes());
+		List<Mensaje> mensajes = service.listarMensajes();
+		for(Mensaje mensaje:mensajes) {
+			if(mensaje.getRespuesta()!=null) {
+				mensaje.setRespondido(true);
+			}else {
+				mensaje.setRespondido(false);
+			}
+			service.guardarMensaje(mensaje);
+		}
+		
+		m.addAttribute("mensajesList", mensajes);
 		log.info("------" + service.listarMensajes());
 		return "adminMensajes";
 	}
@@ -84,7 +94,7 @@ public class MensajeController {
 	/*
 	 * Metodo para guardar respuesta del mensjae
 	 */
-	@PostMapping("/admin/mensajes/responder")
+	/*@PostMapping("/admin/mensajes/responder")
 	public ModelAndView guardarMensaje(@RequestParam("id") int id) {
 		log.info("----- Entrando en guardaRespuesta");
 		List<Mensaje> mensajes = service.listarMensajes();
@@ -96,6 +106,6 @@ public class MensajeController {
 		}
 		service.guardarMensaje(mensaje);
 		return new ModelAndView("redirect:/admin/mensajes");
-	}
+	}*/
 
 }
