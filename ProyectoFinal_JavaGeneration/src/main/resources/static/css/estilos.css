@@ -912,5 +912,17 @@ ____________________________________________________
 		color: #fff;
 	}
 
+	.admin-interno {
+		text-align: justify;
+	}
 	
+	.enlace {
+	color: rgb(224, 157, 12);
+	font-weight: bold;
+	}
+	
+	.enlace:hover {
+	color: rgb(224, 157, 12);
+	font-weight: bold;
+	}
 
