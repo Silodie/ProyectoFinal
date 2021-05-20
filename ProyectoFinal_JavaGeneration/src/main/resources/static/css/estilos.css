@@ -912,4 +912,20 @@ ____________________________________________________
 		color: #fff;
 	}
 
+<<<<<<< HEAD
+=======
+	.admin-interno {
+		text-align: justify;
+	}
+	
+	.enlace {
+	color: rgb(224, 157, 12);
+	font-weight: bold;
+	}
+	
+	.enlace:hover {
+	color: rgb(224, 157, 12);
+	font-weight: bold;
+	}
+>>>>>>> 42850390908b4efd9f716b812ccc73ddd41b3776
 
