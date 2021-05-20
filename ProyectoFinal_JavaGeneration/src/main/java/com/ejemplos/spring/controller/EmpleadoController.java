@@ -31,7 +31,7 @@ import com.ejemplos.spring.service.EmpleadoService;
  * @author Javier, Noemí, Óscar, Silvia, Usoa
  * @version 1.0
  * @see EmpleadoService
- * @see
+ * @see CargoService
  */
 
 @Controller
@@ -76,7 +76,9 @@ public class EmpleadoController {
 		return "equipo";
 	}
 
-	//Metodo para dar de alta nuevos empleados
+	/*
+	 * Metodo para dar de alta nuevos empleados
+	 */
 	@GetMapping("/admin/equipo/alta")
 	public String altaEmpleado(Empleado empleado, Model m) {
 		log.info("----- Entrando en altaEmpleado");
@@ -84,7 +86,9 @@ public class EmpleadoController {
 		return "adminEquipoAlta";
 	}
 	
-	//Metodo para guardar un nuevo empleado
+	/*
+	 * Metodo para guardar un nuevo empleado
+	 */
 	@PostMapping("/guardarEmpleado")
 	public ModelAndView guardarEmpleado(Empleado empleado) {
 		log.info("----- Entrando en guardaEmpleado");	
@@ -92,7 +96,9 @@ public class EmpleadoController {
 		return new ModelAndView("redirect:/admin/equipo");
 	}
 	
-	//Metodo para editar un empleado
+	/*
+	 * Metodo para editar un empleado
+	 */
 	@GetMapping("/editar")
 	public String editarEmpleado(@RequestParam("id") int id, Model m) {
 		log.info("----- Entrando en editarEmpleado");
@@ -112,7 +118,9 @@ public class EmpleadoController {
 		return "adminEquipoAlta";
 	}
 	
-	//Metodo para eliminar un empleado
+	/*
+	 * Metodo para eliminar un empleado
+	 */
 	@GetMapping("/eliminar")
 	public ModelAndView eliminarEmpleado(@RequestParam("id")int id) {
 		log.info("----- Entrando en eliminarEmpleado");

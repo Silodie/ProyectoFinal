@@ -8,6 +8,13 @@ import org.springframework.stereotype.Service;
 import com.ejemplos.spring.model.Cargo;
 import com.ejemplos.spring.repository.CargoRepository;
 
+/**
+ * Clase CargoServiceImpl. Implementa los metodos llamados en su interfaz correspondiente
+ * 
+ * @author Javier, Noemí, Óscar, Silvia, Usoa
+ * @version 1.0
+ * @see CargoRepository
+ */
 @Service
 public class CargoServiceImpl implements CargoService {
 

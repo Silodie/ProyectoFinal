@@ -8,6 +8,16 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.ejemplos.spring.service.CargoService;
+import com.ejemplos.spring.service.EmpleadoService;
+
+/**
+ * Clase Empleado. Se especifican sus atributos y metodos correspondientes
+ * 
+ * @author Javier, Noemí, Óscar, Silvia, Usoa
+ * @version 1.0
+ */
+
 @Entity
 @Table(name = "equipo")
 public class Empleado {

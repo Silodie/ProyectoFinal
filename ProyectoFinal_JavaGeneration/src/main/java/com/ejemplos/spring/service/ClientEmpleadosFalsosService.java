@@ -6,7 +6,12 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import com.ejemplos.spring.model.EmpleadoFalso;
 
-
+/**
+ * Clase ClientEmpleadosFalsosService. Intercepta la url que genera un json
+ * 
+ * @author Javier, Noemí, Óscar, Silvia, Usoa
+ * @version 1.0
+ */
 @Service
 public class ClientEmpleadosFalsosService {
 	//este metodo invoca la url de /random/persons y devuelve la listaEmplFalso [eF1, eF2, etc]

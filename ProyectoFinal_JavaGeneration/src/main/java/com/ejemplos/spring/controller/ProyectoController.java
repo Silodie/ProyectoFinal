@@ -22,13 +22,13 @@ import com.ejemplos.spring.service.ClientProyectoService;
 
 
 /**
- * Clase EmpleadoController. Intercepta la llamada del navegador para que entre
+ * Clase ProyectoController. Intercepta la llamada del navegador para que entre
  * por el control.
  * 
  * @author Javier, Noemí, Óscar, Silvia, Usoa
  * @version 1.0
  * @see ClientProyectoService
- * @see
+ * @see ClientClienteService
  */
 
 @Controller
@@ -40,8 +40,6 @@ public class ProyectoController {
 	@Autowired
 	ClientClienteService clienteService;
 	
-
-
 	private static final Logger log = LoggerFactory.getLogger(ProyectoController.class);
 
 	/*
@@ -92,8 +90,9 @@ public class ProyectoController {
 	}
 		
 	
-//Metodo para dar de alta nuevos proyectos
-	
+	/*
+	 * Metodo para dar de alta nuevos proyectos
+	 */
 	@GetMapping("/admin/proyectos/alta")
 	public String altaProyecto(Proyecto proyecto, Model m) {
 		log.info("----- Entrando en altaProyecto");
@@ -103,8 +102,9 @@ public class ProyectoController {
 		return "adminProyectosAlta";
 	}
 	
-//Metodo para guardar un nuevo proyecto
-	
+	/*
+	 * Metodo para guardar un nuevo proyecto
+	 */
 	@PostMapping("/guardarProyecto")
 	public ModelAndView guardarProyecto(Proyecto proyecto, BindingResult br, String cliente) {
 		log.info("----- Entrando en guardaProyecto");
@@ -120,7 +120,9 @@ public class ProyectoController {
 	}
 	
 	
-	//Metodo para editar un proyecto
+	/*
+	 * Metodo para editar un proyecto
+	 */
 	@GetMapping("/admin/proyectos/editar")
 	public String editarProyecto(@RequestParam("id") int id, Model m) {
 			log.info("----- Entrando en editarProyecto");
@@ -141,7 +143,9 @@ public class ProyectoController {
 	}
 	
 	
-	//Metodo para eliminar un proyecto
+	/*
+	 * Metodo para eliminar un proyecto
+	 */
 	@GetMapping("/admin/proyectos/eliminar")
 	public ModelAndView eliminarProyecto(@RequestParam("id") int id) {
 		log.info("----- Entrando en eliminarProyecto");

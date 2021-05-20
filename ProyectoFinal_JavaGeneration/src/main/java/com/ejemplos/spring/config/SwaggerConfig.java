@@ -3,17 +3,21 @@ package com.ejemplos.spring.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import com.ejemplos.spring.service.CargoService;
+import com.ejemplos.spring.service.EmpleadoService;
+
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-//The configuration of Swagger mainly centers around the Docket bean.
-//Swagger 2 is enabled through the @EnableSwagger2 annotation.
-
-//After the Docket bean is defined, its select() method returns an instance of ApiSelectorBuilder, 
-//which provides a way to control the endpoints exposed by Swagger.
+/**
+ * Clase SwaggerConfig. Crea la documentacion del proyecto
+ * 
+ * @author Javier, Noemí, Óscar, Silvia, Usoa
+ * @version 1.0
+ */
 
 /*
  * Una vez ejecutados ambos proyectos, escribir el siguiente codigo en la barra de navegacion

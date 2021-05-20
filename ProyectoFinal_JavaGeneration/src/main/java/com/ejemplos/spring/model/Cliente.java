@@ -2,7 +2,15 @@ package com.ejemplos.spring.model;
 
 import javax.persistence.Entity;
 
+import com.ejemplos.spring.service.CargoService;
+import com.ejemplos.spring.service.EmpleadoService;
 
+/**
+ * Clase Cliente. Especifica sus atributos y metodos correspondientes
+ * 
+ * @author Javier, Noemí, Óscar, Silvia, Usoa
+ * @version 1.0
+ */
 
 public class Cliente {
 	

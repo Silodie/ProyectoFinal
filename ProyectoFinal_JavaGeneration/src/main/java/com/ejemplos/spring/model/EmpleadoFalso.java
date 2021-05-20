@@ -1,6 +1,14 @@
 package com.ejemplos.spring.model;
 
+import com.ejemplos.spring.service.CargoService;
+import com.ejemplos.spring.service.EmpleadoService;
 
+/**
+ * Clase EmpleadoFalso. Ademas de sus atributos y metodos, crea aleatoriamente datos de empleados
+ * 
+ * @author Javier, Noemí, Óscar, Silvia, Usoa
+ * @version 1.0
+ */
 public class EmpleadoFalso {
 
 	private int id;
