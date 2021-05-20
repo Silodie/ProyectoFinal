@@ -8,6 +8,13 @@ import org.springframework.stereotype.Service;
 import com.ejemplos.spring.model.Empleado;
 import com.ejemplos.spring.repository.EmpleadoRepository;
 
+/**
+ * Clase EmpleadoServiceImpl. Implemente los metodos de su interfaz 
+ * 
+ * @author Javier, Noemí, Óscar, Silvia, Usoa
+ * @version 1.0
+ * @see EmpleadoRepository
+ */
 @Service
 public class EmpleadoServiceImpl implements EmpleadoService {
 

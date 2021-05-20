@@ -13,7 +13,13 @@ import com.ejemplos.spring.model.Empleado;
 import com.ejemplos.spring.model.Proyecto;
 import com.ejemplos.spring.repository.EmpleadoRepository;
 
-
+/**
+ * Clase ClientProyectoService. Invoca diferentes url y tambien recoge un proyecto para eliminarlo o editarlo
+ * 
+ * @author Javier, Noemí, Óscar, Silvia, Usoa
+ * @version 1.0
+ * @see RestTemplate
+ */
 @Service
 public class ClientProyectoService {
 	

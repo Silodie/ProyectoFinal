@@ -6,6 +6,16 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.ejemplos.spring.service.CargoService;
+import com.ejemplos.spring.service.EmpleadoService;
+
+/**
+ * Clase Cargo. Se especifican sus atributos y metodos correspondientes
+ * 
+ * @author Javier, Noemí, Óscar, Silvia, Usoa
+ * @version 1.0
+ */
+
 @Entity
 @Table(name = "cargos")
 public class Cargo {

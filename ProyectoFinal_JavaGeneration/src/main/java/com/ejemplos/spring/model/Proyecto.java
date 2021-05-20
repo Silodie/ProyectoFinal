@@ -2,8 +2,15 @@ package com.ejemplos.spring.model;
 
 import javax.persistence.Entity;
 import com.ejemplos.spring.model.Cliente;
+import com.ejemplos.spring.service.CargoService;
+import com.ejemplos.spring.service.EmpleadoService;
 
-
+/**
+ * Clase Proyecto. Se especifican sus atributos y metodos
+ * 
+ * @author Javier, Noemí, Óscar, Silvia, Usoa
+ * @version 1.0
+ */
 
 public class Proyecto {
 		
